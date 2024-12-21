@@ -93,7 +93,7 @@ pipeline {
         }
         stage ("Git checkout") {
             steps {
-                git branch: 'main', url: 'https://github.com/nandhankumar/starbucks'
+                git branch: 'main', url: 'https://github.com/nandhankumar/starbucks.git'
             }
         }
         stage("Sonarqube Analysis "){

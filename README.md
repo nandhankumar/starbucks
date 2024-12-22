@@ -136,8 +136,8 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'docker') {
-                        sh "docker tag starbucks nandhankumar/starbucks:latest "
-                        sh "docker push nandhankumar/starbucks:latest "
+                        sh "docker tag starbucks nandhu1902/starbucks:latest "
+                        sh "docker push nandhu1902/starbucks:latest "
                     }
                 }
             }
@@ -146,16 +146,16 @@ pipeline {
             steps {
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
-                       sh 'docker-scout quickview nandhankumar/starbucks:latest'
-                       sh 'docker-scout cves nandhankumar/starbucks:latest'
-                       sh 'docker-scout recommendations nandhankumar/starbucks:latest'
+                       sh 'docker-scout quickview nandhu1902/starbucks:latest'
+                       sh 'docker-scout cves nandhu1902/starbucks:latest'
+                       sh 'docker-scout recommendations nandhu1902/starbucks:latest'
                    }
                 }
             }
         }
         stage ("Deploy to Conatiner") {
             steps {
-                sh 'docker run -d --name starbucks -p 3000:3000 nandhankumar/starbucks:latest'
+                sh 'docker run -d --name starbucks -p 3000:3000 nandhu1902/starbucks:latest'
             }
         }
     }

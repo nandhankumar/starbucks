@@ -155,7 +155,7 @@ pipeline {
         }
         stage ("Deploy to Conatiner") {
             steps {
-                sh 'docker run -d --name starbucks -p 3000:3000 nandhu1902/starbucks:latest'
+                sh 'docker run -d --name starbucks -p 3000:3000 nandhankumar/starbucks:latest'
             }
         }
     }

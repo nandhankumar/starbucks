@@ -3,6 +3,7 @@
 # Deploy Starbucks Clone Application AWS using DevSecOps Approach
 
 # **Install AWS CLI**
+
 ```
 sudo apt install unzip -y
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -10,9 +11,10 @@ unzip awscliv2.zip
 sudo ./aws/install
 ```
 
-**OR**
+# **OR**
 
 # **Install Azure CLI**
+
 ```
 1) Get packages needed for the install process:
 sudo apt-get update
@@ -32,6 +34,7 @@ sudo tee /etc/apt/sources.list.d/azure-cli.list
 sudo apt-get update
 sudo apt-get install azure-cli
 ```
+
 # **Install Jenkins on Ubuntu:**
 
 ```
@@ -50,8 +53,8 @@ sudo systemctl start jenkins
 sudo systemctl status jenkins
 ```
 
-
 # **Install Docker on Ubuntu:**
+
 ```
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -93,8 +96,6 @@ curl -sSfL https://raw.githubusercontent.com/docker/scout-cli/main/install.sh | 
 ```
 # Deployment Stages:
 ![Screenshot 2024-12-22 120035](https://github.com/user-attachments/assets/103ab3ca-a096-4777-a9db-bcdd3cdb3f95)
-
-
 
 # Jenkins Complete pipeline
 ```

@@ -9,8 +9,11 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip
 sudo ./aws/install
 ```
+
+**OR**
+
+# **Install Azure CLI**
 ```
-**Install Azure CLI**
 1) Get packages needed for the install process:
 sudo apt-get update
 sudo apt-get install curl apt-transport-https lsb-release gnupg
